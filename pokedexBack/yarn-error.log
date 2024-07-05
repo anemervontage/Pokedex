@@ -1,0 +1,42 @@
+Arguments: 
+  /Users/txt./.nvm/versions/node/v16.20.0/bin/node /Users/txt./.nvm/versions/node/v16.20.0/bin/yarn add express mongoose dotenv multer
+
+PATH: 
+  /Users/txt./.nvm/versions/node/v16.20.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/txt./.nvm/versions/node/v16.20.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EPERM: operation not permitted, open '/Users/txt./Desktop/package.json'
+
+npm manifest: 
+  {
+    "name": "pokedexback",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "body-parser": "^1.20.2",
+      "cors": "^2.8.5",
+      "express": "^4.19.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
