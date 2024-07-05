@@ -14,6 +14,7 @@ body {
     padding: 15px;
 }
 
+
 main {
     display: inline-block;
     margin-top: 2%;
@@ -98,8 +99,10 @@ button:active{
     font-size: 0.9rem;
 }
 
-.dropdown{
-    position:absolute; left:240px; top:120px;
+.dropdown {
+    position: absolute;
+    left: 240px;
+    top: 120px;
     font-weight: 600;
     color: #3a444d;
     font-size: 1.5vmin;
