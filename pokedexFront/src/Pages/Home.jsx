@@ -50,7 +50,10 @@ export default function Home() {
   // Navigate to previous Pokemon
   const prev = () => {
     setSelectedIndex(function(prevIndex) {
-      if (prevIndex === 0) {
+      if (selectedIndex === -1){
+        return selectedIndex
+      }
+      else if (prevIndex === 0) {
         return pokemons.length - 1;
       } else {
         return prevIndex - 1;
