@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/pokemon');
+        const response = await axios.get('https://pokedex-ofqq.onrender.com/api/pokemon');
         setPokemons(response.data);
       } catch (error) {
         console.log('Failed to get pokemon', error);
