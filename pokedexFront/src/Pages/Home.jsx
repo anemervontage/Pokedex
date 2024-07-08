@@ -42,6 +42,11 @@ export default function Home() {
 
   // Navigate to next Pokemon
   const next = () => {
+    if (selectedIndex === -1){
+      //spin up server if down
+      const response =  axios.get('https://pokedex-ofqq.onrender.com/api/pokemon');
+      console.log(response.data);
+    }
     setSelectedIndex(function(prevIndex) {
       return (prevIndex + 1) % pokemons.length;
     });
@@ -51,7 +56,11 @@ export default function Home() {
   const prev = () => {
     setSelectedIndex(function(prevIndex) {
       if (selectedIndex === -1){
-        return selectedIndex
+      //spin up server if down
+      const response =  axios.get('https://pokedex-ofqq.onrender.com/api/pokemon');
+      console.log(response.data);
+
+      return selectedIndex
       }
       else if (prevIndex === 0) {
         return pokemons.length - 1;
